@@ -1,7 +1,11 @@
 Bottles::Application.routes.draw do
+  get "mainnav/index"
+
   resources :users
 
   resources :messages
+  
+  root :to => 'mainnav#index', :as => 'Home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
