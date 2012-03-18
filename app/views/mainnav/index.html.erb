@@ -1,2 +1,4 @@
-<h1>Mainnav#index</h1>
-<p>Find me in app/views/mainnav/index.html.erb</p>
+<h1>Random messages</h1>
+<% @randmessage.each do |message| %>
+<h4><%= message.content %></h4>
+<% end %>

@@ -1,11 +1,14 @@
 Bottles::Application.routes.draw do
-  get "mainnav/index"
 
+  root :to => 'mainnav#index'
+  
   resources :users
-
   resources :messages
   
-  root :to => 'mainnav#index', :as => 'Home'
+  match '/userprofile', :to => 'mainnav#userprofile'
+  match '/home', '/', :to => 'mainnav#index'
+  
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
