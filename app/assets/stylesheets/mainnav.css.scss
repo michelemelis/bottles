@@ -3,14 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.container {
-  width: 710px;
+#container {
+  width: 800px;
   margin: 0 auto;
 }
 
-body {
-  background: #cfcfcf;
+#leftbox {
+  float:left;
+  width: 400px;
 }
+
+#rightbox {
+  float:left;
+  width: 400px;
+}
+
 
 header {
   padding-top: 20px;

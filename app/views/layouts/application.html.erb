@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
+  <div id="container">
     <header>
       <h1><%= link_to "Bottles", home_path %></h1>
       <nav class="round">
@@ -16,7 +16,7 @@
           </ul>
       </nav>
     </header>
-  <section class="round">
+  <section class="container">
   <%= yield %>
   </section>
   </div>
