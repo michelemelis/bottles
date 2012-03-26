@@ -3,22 +3,24 @@
 <head>
   <title>Bottles | <%= @title %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "960" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="container">
-    <header>
-      <h1><%= link_to "Bottles", home_path %></h1>
-      <nav class="round">
+  <div class="container_12">
+  <div class="grid_4">
+  <h1><%= link_to "Bottles", home_path %></h1>
+  </div>
+  <div class="grid_8">
         <ul>
             <li><%= link_to "Your messages", userprofile_path %></li>
           </ul>
-      </nav>
-    </header>
-  <section class="container">
-  <%= yield %>
-  </section>
   </div>
+    
+
+
+  <%= yield %>
+
+     </div>
 </body>
 </html>
